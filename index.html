@@ -1,26 +1,215 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VipАвто - Автосервис в Шахтах | Профессиональный ремонт автомобилей</title>
-    <meta name="description" content="Автосервис VipАвто в Шахтах: качественный ремонт и обслуживание автомобилей. Диагностика, ТО, ремонт двигателя, электрика. Опытные мастера, современное оборудование." />
-    <meta name="keywords" content="автосервис Шахты, ремонт автомобилей, ТО, диагностика, VipАвто" />
-    <meta name="author" content="VipАвто" />
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VipАвто - Специализированный автосервис в г. Шахты</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme"> <!-- Тема по умолчанию -->
 
-    <meta property="og:title" content="VipАвто - Автосервис в Шахтах" />
-    <meta property="og:description" content="Профессиональный ремонт и обслуживание автомобилей в Шахтах. Опыт 15+ лет." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">Vip-Авто161</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#advantages">Преимущества</a></li>
+                    <li><a href="#testimonials">Отзывы</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <button class="theme-switcher" id="theme-switcher" aria-label="Переключить тему">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM12 9c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3zM12 2c.55 0 1 .45 1 1v1c0 .55-.45 1-1 1s-1-.45-1-1V3c0-.55.45-1 1-1zM12 20c.55 0 1 .45 1 1v1c0 .55-.45 1-1 1s-1-.45-1-1v-1c0-.55.45-1 1-1zM4.22 5.64l.71.71c.39.39 1.02.39 1.41 0s.39-1.02 0-1.41L5.64 4.22C5.25 3.83 4.62 3.83 4.22 4.22s-.39 1.02 0 1.41zM18.36 19.78l.71.71c.39.39 1.02.39 1.41 0s.39-1.02 0-1.41l-.71-.71c-.39-.39-1.02-.39-1.41 0s-.39 1.02 0 1.41zM20 12c0-.55-.45-1-1-1h-1c-.55 0-1 .45-1 1s.45 1 1 1h1c.55 0 1-.45 1-1zM4 12c0-.55-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1h1c.55 0 1-.45 1-1zM5.64 18.36l.71.71c.39.39.39 1.02 0 1.41s-1.02.39-1.41 0l-.71-.71c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0zM19.78 5.64l.71.71c.39.39.39 1.02 0 1.41s-1.02.39-1.41 0l-.71-.71c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0z"/></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+                </button>
+                <button class="burger" id="burger-menu" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="VipАвто - Автосервис в Шахтах" />
-    <meta name="twitter:description" content="Профессиональный ремонт и обслуживание автомобилей" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <main>
+        <section class="hero">
+            <div class="video-background">
+                <video playsinline autoplay muted loop poster="img/poster.jpg" id="bgvideo">
+                    <source src="img/hero-video.webm" type="video/webm">
+                    <source src="img/hero-video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="container">
+                <h1>Специализированный автосервис электрики и электроники в г. Шахты</h1>
+                <p class="subtitle">VipАвто - Профессиональный автосервис с гарантией качества на все виды работ</p>
+                <button class="btn btn-primary" id="open-modal-btn">Записаться на сервис</button>
+            </div>
+        </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Наши услуги</h2>
+                <p class="section-subtitle">Полный спектр услуг для вашего автомобиля</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><!-- SVG --></div>
+                        <h3 class="service-title">Компьютерная диагностика</h3>
+                        <p>Точное определение неисправностей с использованием современного оборудования.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><!-- SVG --></div>
+                        <h3 class="service-title">Автоэлектрика</h3>
+                        <p>Ремонт и восстановление электрических систем любой сложности.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><!-- SVG --></div>
+                        <h3 class="service-title">Автосвет</h3>
+                        <p>Настройка, ремонт и замена фар, установка дополнительного освещения.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><!-- SVG --></div>
+                        <h3 class="service-title">Кондиционеры</h3>
+                        <p>Диагностика, заправка и ремонт автомобильных кондиционеров.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><!-- SVG --></div>
+                        <h3 class="service-title">Охранные системы</h3>
+                        <p>Установка и настройка современных сигнализаций и иммобилайзеров.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><!-- SVG --></div>
+                        <h3 class="service-title">Продажа оборудования</h3>
+                        <p>Подбор и продажа качественного электрооборудования для вашего авто.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="advantages" class="advantages">
+            <div class="container">
+                <h2 class="section-title">Почему выбирают именно нас</h2>
+                <div class="advantages-grid">
+                    <div class="advantage-card">
+                        <h3>10+ лет</h3>
+                        <p>Специализируемся на автоэлектрике и электронике, знаем все тонкости диагностики и ремонта.</p>
+                    </div>
+                    <div class="advantage-card">
+                        <h3>1500+</h3>
+                        <p>Довольных клиентов, которые доверяют нам свои автомобили и рекомендуют нас друзьям.</p>
+                    </div>
+                    <div class="advantage-card">
+                        <h3>100%</h3>
+                        <p>Гарантия на все выполненные работы и установленные запчасти.</p>
+                    </div>
+                    <div class="advantage-card">
+                        <h3>Честные цены</h3>
+                        <p>Прозрачное ценообразование и предварительное согласование стоимости работ.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2 class="section-title">Отзывы наших клиентов</h2>
+                <p class="section-subtitle">Что говорят о нас те, кто уже воспользовался нашими услугами</p>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p>"Отличный сервис! Быстро нашли причину и устранили неисправность в электрике. Рекомендую!"</p>
+                        <div class="testimonial-author">
+                            <h4>Александр Иванов</h4>
+                            <div class="rating"><!-- 5 звезд --></div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Мастера - настоящие профессионалы. Сделали сложную диагностику, с которой не справились в другом месте."</p>
+                        <div class="testimonial-author">
+                            <h4>Мария Петрова</h4>
+                            <div class="rating"><!-- 5 звезд --></div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Всегда качественный сервис и адекватные цены. Уже не первый раз обращаюсь, всегда доволен."</p>
+                        <div class="testimonial-author">
+                            <h4>Дмитрий Сидоров</h4>
+                            <div class="rating"><!-- 5 звезд --></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-details">
+                        <p><strong>Адрес:</strong> Ростовская обл., г. Шахты, пер. Новошахтинский, 44Б</p>
+                        <p><strong>Телефон:</strong> <a href="tel:+79287777009">+7 (928) 7777-009</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:info@vipauto161.ru">info@vipauto161.ru</a></p>
+                        <p><strong>Время работы:</strong> Пн-Пт: 9:00 - 19:00, Сб: 9:00 - 17:00, Вс: выходной</p>
+                        <div class="social-links">
+                            <a href="#" target="_blank" aria-label="VK"></a>
+                            <a href="https://wa.me/79287777009" target="_blank" aria-label="WhatsApp"></a>
+                            <a href="https://t.me/+79287777009" target="_blank" aria-label="Telegram"></a>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A...&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="/" class="logo">Vip-Авто161</a>
+                <ul class="footer-nav">
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#advantages">Преимущества</a></li>
+                    <li><a href="#testimonials">Отзывы</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                <div class="social-links">
+                     <a href="#" target="_blank" aria-label="VK"></a>
+                     <a href="https://wa.me/79287777009" target="_blank" aria-label="WhatsApp"></a>
+                     <a href="https://t.me/+79287777009" target="_blank" aria-label="Telegram"></a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2025 VipАвто. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-content" id="modal-content">
+            <button class="modal-close" id="modal-close-btn" aria-label="Закрыть окно">&times;</button>
+            <h3>Записаться на сервис</h3>
+            <form class="modal-form">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="tel" name="phone" placeholder="Телефон" required>
+                <select name="service" required>
+                    <option value="" disabled selected>Интересующая услуга</option>
+                    <option value="diagnostics">Компьютерная диагностика</option>
+                    <option value="electrics">Автоэлектрика</option>
+                    <option value="lights">Автосвет</option>
+                    <option value="ac">Кондиционеры</option>
+                    <option value="security">Охранные системы</option>
+                    <option value="equipment">Продажа оборудования</option>
+                </select>
+                <textarea name="comment" placeholder="Комментарий"></textarea>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="privacy" required>
+                    <span>Согласен с политикой конфиденциальности</span>
+                </label>
+                <button type="submit" class="btn btn-primary">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
 </html>
